@@ -1,0 +1,18 @@
+[build]
+  command = ""
+  publish = "/workspace"
+
+# Netlify automatically uses the repo root as publish if deploying from repo.
+# If deploying via drag-and-drop, ensure all files are at the root level.
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
