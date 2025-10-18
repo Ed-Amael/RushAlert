@@ -1,18 +1,9 @@
 [build]
-  command = ""
-  publish = "/workspace"
+  command = "npm run build"
+  publish = ".next"
 
-# Netlify automatically uses the repo root as publish if deploying from repo.
-# If deploying via drag-and-drop, ensure all files are at the root level.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
 
-[[headers]]
-  for = "/assets/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options = "SAMEORIGIN"
-    X-Content-Type-Options = "nosniff"
-    Referrer-Policy = "strict-origin-when-cross-origin"
+[build.environment]
+  NODE_VERSION = "18"
