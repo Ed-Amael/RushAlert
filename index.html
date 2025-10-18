@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>RushAlert - Instant Alerts for Critical Decisions</title>
+  <meta name="description" content="Unified real-time notifications to keep you ahead. Free trial now." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <meta property="og:title" content="RushAlert - Instant Alerts for Critical Decisions" />
+  <meta property="og:description" content="Unified real-time notifications to keep you ahead. Free trial now." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rushalert.example" />
+  <meta property="og:image" content="https://placehold.co/1200x630/0f0f12/ffffff?text=RushAlert" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="RushAlert - Instant Alerts for Critical Decisions" />
+  <meta name="twitter:description" content="Unified real-time notifications to keep you ahead. Free trial now." />
+  <meta name="twitter:image" content="https://placehold.co/1200x630/0f0f12/ffffff?text=RushAlert" />
+  <link rel="canonical" href="https://rushalert.example" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%23ff4d4f'/%3E%3Cpath d='M50 16 L68 56 H32 Z' fill='white'/%3E%3Ccircle cx='50' cy='74' r='6' fill='white'/%3E%3C/svg%3E" />
+
+  <link rel="stylesheet" href="./styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "RushAlert",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "iOS, Android, Web",
+    "description": "Unified real-time notifications for critical decisions in high-stakes environments.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "brand": {
+      "@type": "Brand",
+      "name": "RushAlert"
+    }
+  }
+  </script>
+
+  <!-- Google Analytics (placeholder). Replace GA_MEASUREMENT_ID before production. -->
+  <script>
+    // window.dataLayer = window.dataLayer || [];
+    // function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
+    // gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+  <!-- Hotjar (placeholder) -->
+  <script>
+    // (function(h,o,t,j,a,r){
+    //   h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+    //   h._hjSettings={hjid: 999999, hjsv: 6};
+    //   a=o.getElementsByTagName('head')[0];
+    //   r=o.createElement('script');r.async=1;r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    //   a.appendChild(r);
+    // })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="RushAlert home">
+        <span class="brand-mark" aria-hidden="true">⚡</span>
+        <span class="brand-text">RushAlert</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#problem">About</a>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#social">Customers</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-accent" href="#waitlist">Get Early Access</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="hero" class="section hero">
+      <div class="container grid hero-grid">
+        <div class="hero-copy reveal">
+          <h1>RushAlert: Never Miss a Critical Moment Again</h1>
+          <p class="subhead">Real-time alerts that cut through the noise—delivering urgent notifications to your team or device in seconds, so you act fast and stay safe.</p>
+          <div class="cta-group">
+            <a class="btn btn-accent btn-lg" href="#waitlist">Get Early Access</a>
+            <button class="btn btn-ghost btn-lg" data-open-video data-video-url="https://www.youtube.com/embed/ysz5S6PUM-U?autoplay=1">Watch Demo</button>
+          </div>
+          <p class="trust">Built for high-stakes pros · Beta Launching Q1 2026</p>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="device-mock">
+            <div class="statusbar">
+              <span>09:41</span>
+              <span class="dots">● ● ●</span>
+            </div>
+            <div class="screen">
+              <div class="alert-card critical">
+                <div class="alert-title">Wildfire proximity alert</div>
+                <div class="alert-meta">2.1 mi • Sonoma County</div>
+              </div>
+              <div id="hero-map" class="map-placeholder" role="img" aria-label="Map with alert pins">
+                <div class="pin pin-danger" style="left:18%; top:50%"></div>
+                <div class="pin pin-warn" style="left:56%; top:32%"></div>
+                <div class="pin pin-info" style="left:74%; top:67%"></div>
+              </div>
+              <div class="alert-feed">
+                <div class="feed-row">Market dip: NASDAQ -1.2% <span>• Now</span></div>
+                <div class="feed-row">Team check-in overdue: Site B <span>• 2m</span></div>
+                <div class="feed-row">Road closure near Depot 3 <span>• 5m</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem -->
+    <section id="problem" class="section section-alt reveal">
+      <div class="container narrow">
+        <h2>Fragmented Alerts Are Costing You Time and Lives</h2>
+        <p>In fast-moving worlds like emergency response, trading, or remote ops, delayed info means disaster. Siloed apps, slow emails, and unreliable pushes leave you reactive—not proactive.</p>
+        <ul class="stat-list">
+          <li>
+            <strong>70%</strong>
+            <span>of incidents escalate due to missed warnings <em>(industry reports)</em></span>
+          </li>
+          <li>
+            <strong>5+</strong>
+            <span>tools juggled per team to track updates</span>
+          </li>
+        </ul>
+        <div class="problem-visual">
+          <div class="bar-chart" aria-hidden="true">
+            <div class="bar legacy" style="height: 76%"><span>Legacy</span></div>
+            <div class="bar rush" style="height: 28%"><span>RushAlert</span></div>
+          </div>
+          <p class="chart-caption">Time to Alert ↓ (lower is better)</p>
+        </div>
+        <p><a class="text-cta" href="#solution">See How We Fix This →</a></p>
+      </div>
+    </section>
+
+    <!-- Solution -->
+    <section id="solution" class="section reveal">
+      <div class="container">
+        <h2>RushAlert: Unified, Instant Alerts That Empower Action</h2>
+        <p>RushAlert is your single hub for customizable, AI-powered notifications. Integrate once, alert everywhere—SMS, app, email, Slack. Tailored for urgency, with zero false positives.</p>
+        <p class="mission">Mission: Bridge the gap in real-time comms to save time, reduce risks, and boost outcomes in critical environments.</p>
+        <div class="bullets">
+          <div class="bullet">
+            <span class="icon">🧠</span>
+            <div>
+              <h3>AI filters noise</h3>
+              <p>Hyper-relevant alerts, no clutter. Signals over noise.</p>
+            </div>
+          </div>
+          <div class="bullet">
+            <span class="icon">🔗</span>
+            <div>
+              <h3>Cross-platform sync</h3>
+              <p>iOS, Android, and web—always in lockstep.</p>
+            </div>
+          </div>
+          <div class="bullet">
+            <span class="icon">🏢</span>
+            <div>
+              <h3>Scales with you</h3>
+              <p>From solo operators to global teams.</p>
+            </div>
+          </div>
+        </div>
+        <div class="solution-visual">
+          <img src="https://placehold.co/960x540/15151d/ffffff?text=Dashboard+Mockup" alt="RushAlert dashboard mockup" loading="lazy" />
+        </div>
+        <div class="center">
+          <a class="btn btn-accent" href="#pricing">Start Your Free Trial</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section section-alt reveal">
+      <div class="container">
+        <h2>Alerts That Work Smarter, Not Harder</h2>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon">📍</div>
+            <h3>Real-Time Geo-Tracking</h3>
+            <p class="desc">Pinpoint alerts by location (e.g., weather, traffic).</p>
+            <p class="benefit">Respond locally, faster—cut response time by <strong>50%</strong>.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">⚙️</div>
+            <h3>Custom Triggers</h3>
+            <p class="desc">Set rules for market dips, check-ins, or device health.</p>
+            <p class="benefit">Automate what matters without overwhelm.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">📣</div>
+            <h3>Multi-Channel Delivery</h3>
+            <p class="desc">Phone push, email, SMS/voice, Slack integrations.</p>
+            <p class="benefit">Reach everyone, everywhere—no one left in the dark.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">📊</div>
+            <h3>Analytics Dashboard</h3>
+            <p class="desc">Track alert performance and engagement.</p>
+            <p class="benefit">Make data-driven decisions and prove ROI.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">🔐</div>
+            <h3>Secure & Compliant</h3>
+            <p class="desc">End-to-end encryption; GDPR/HIPAA ready.</p>
+            <p class="benefit">Trust built-in for sensitive operations.</p>
+          </article>
+        </div>
+        <div class="center">
+          <a class="btn btn-ghost" href="#features">Explore Features</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section id="social" class="section reveal">
+      <div class="container">
+        <h2>Trusted by Teams Who Can't Afford Delays</h2>
+        <div class="testimonials">
+          <figure class="quote">
+            <img src="https://i.pravatar.cc/100?img=12" alt="Portrait of Alex R" loading="lazy" />
+            <blockquote>RushAlert turned our chaotic shifts into seamless ops. Saved us hours daily.</blockquote>
+            <figcaption>— Alex R., Emergency Coordinator</figcaption>
+          </figure>
+          <figure class="quote">
+            <img src="https://i.pravatar.cc/100?img=32" alt="Portrait of Jordan L" loading="lazy" />
+            <blockquote>Instant market alerts mean we never miss a trade window. Game-changer.</blockquote>
+            <figcaption>— Jordan L., Trader at FinTech Co.</figcaption>
+          </figure>
+          <figure class="quote">
+            <img src="https://i.pravatar.cc/100?img=45" alt="Portrait of Sam K" loading="lazy" />
+            <blockquote>Integrated perfectly with our Slack—team response time down 40%.</blockquote>
+            <figcaption>— Sam K., Remote Ops Lead</figcaption>
+          </figure>
+        </div>
+        <ul class="metrics">
+          <li><strong>500+</strong> Beta Users</li>
+          <li><strong>98%</strong> Uptime</li>
+          <li><strong>4.9/5</strong> Rating</li>
+        </ul>
+        <div class="integrations">
+          <span class="pill">Slack</span>
+          <span class="pill">Twilio</span>
+          <span class="pill">Email</span>
+          <span class="pill">SMS</span>
+        </div>
+        <div class="center">
+          <a class="btn btn-accent" href="#waitlist">Join the Beta</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing / CTA -->
+    <section id="pricing" class="section section-alt reveal">
+      <div class="container">
+        <h2>Get Started in Minutes—Free to Try</h2>
+        <div class="pricing-grid">
+          <article class="price-card">
+            <h3>Starter</h3>
+            <p class="price">Free</p>
+            <ul class="includes">
+              <li>50 alerts/mo</li>
+              <li>Basic integrations</li>
+              <li>Email support</li>
+            </ul>
+            <a class="btn btn-outline" href="#waitlist">Sign Up Free</a>
+          </article>
+          <article class="price-card highlight">
+            <div class="badge">Popular</div>
+            <h3>Pro</h3>
+            <p class="price">$19<span>/user/mo</span></p>
+            <ul class="includes">
+              <li>Unlimited alerts</li>
+              <li>AI filters</li>
+              <li>Priority support</li>
+            </ul>
+            <a class="btn btn-accent" href="#waitlist">Start Pro Trial</a>
+          </article>
+          <article class="price-card">
+            <h3>Enterprise</h3>
+            <p class="price">Custom</p>
+            <ul class="includes">
+              <li>Full API access</li>
+              <li>Custom integrations</li>
+              <li>Dedicated manager</li>
+            </ul>
+            <a class="btn btn-outline" href="#contact">Contact Sales</a>
+          </article>
+        </div>
+        <p class="guarantee">No credit card needed. Cancel anytime. 14-day money-back guarantee.</p>
+
+        <!-- Waitlist Form (Netlify) -->
+        <div id="waitlist" class="waitlist">
+          <h3>Get Early Access</h3>
+          <form name="waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?success=true#waitlist" class="form-card">
+            <input type="hidden" name="form-name" value="waitlist" />
+            <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+
+            <div class="form-grid">
+              <label>
+                <span>Name</span>
+                <input type="text" name="name" autocomplete="name" required />
+              </label>
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" autocomplete="email" required />
+              </label>
+              <label>
+                <span>Role</span>
+                <select name="role" required>
+                  <option value="" disabled selected>Select role</option>
+                  <option>Emergency Response</option>
+                  <option>Trading/Finance</option>
+                  <option>Remote Ops</option>
+                  <option>IT/SRE</option>
+                  <option>Other</option>
+                </select>
+              </label>
+              <label class="full">
+                <span>Why RushAlert?</span>
+                <textarea name="why" rows="3" placeholder="Tell us your use case"></textarea>
+              </label>
+            </div>
+            <button class="btn btn-accent btn-block" type="submit">Request Invite</button>
+            <p class="form-note">We’ll be in touch soon. Beta launching Q1 2026.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand brand-footer" href="#top">
+            <span class="brand-mark" aria-hidden="true">⚡</span>
+            <span class="brand-text">RushAlert</span>
+          </a>
+          <p class="footer-copy">© 2025 RushAlert. All rights reserved. Built with ❤️ for urgent minds.</p>
+          <ul class="legal">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <nav aria-label="Footer">
+          <h4>Navigate</h4>
+          <ul class="footer-nav">
+            <li><a href="#problem">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#social">Customers</a></li>
+            <li><a href="#waitlist">Get Early Access</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h4>Contact</h4>
+          <ul class="contact">
+            <li>Email: <a href="mailto:hello@rushalert.com">hello@rushalert.com</a></li>
+            <li>Twitter/X: <a href="https://twitter.com/RushAlertHQ" target="_blank" rel="noopener">@RushAlertHQ</a></li>
+          </ul>
+          <form name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?newsletter=1#contact" class="newsletter-form">
+            <input type="hidden" name="form-name" value="newsletter" />
+            <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+            <label>
+              <span class="visually-hidden">Email</span>
+              <input type="email" name="email" placeholder="Your email" required />
+            </label>
+            <button class="btn btn-outline" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Sticky CTA Bar -->
+  <div class="sticky-cta" role="region" aria-label="Quick actions">
+    <div class="container sticky-inner">
+      <span class="sticky-text">RushAlert Beta is coming Q1 2026</span>
+      <div class="sticky-actions">
+        <a class="btn btn-accent" href="#waitlist">Get Early Access</a>
+        <button class="btn btn-ghost" data-open-video data-video-url="https://www.youtube.com/embed/ysz5S6PUM-U?autoplay=1">Watch Demo</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video Modal -->
+  <div id="video-modal" class="modal" aria-hidden="true" role="dialog" aria-label="Demo video" aria-modal="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog" role="document">
+      <button class="modal-close" aria-label="Close" data-close-modal>×</button>
+      <div class="modal-body">
+        <div class="video-embed" id="video-embed" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
